@@ -10,7 +10,8 @@ AUTHENTICATION
 
 2.CALCULATOR
 
-![Screenshot 2024-06-18 120121](https://github.com/Maniprabha06/21CSR108/assets/108254371/e0632542-8451-41ee-9b51-ab1b359a5f26)
+![image](https://github.com/Maniprabha06/21CSR108/assets/108254371/7dc9b374-46c9-42df-959a-e9c68f1f52b4)
+
 
 
 ![image](https://github.com/Maniprabha06/21CSR108/assets/108254371/b3661148-d677-4fc9-88a7-0272bfb940c0)
