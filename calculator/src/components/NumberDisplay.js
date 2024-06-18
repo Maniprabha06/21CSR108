@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react';
+import './NumberDisplay.css';
 
 const NumberDisplay = () => {
   const [numbers, setNumbers] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
-  const bearerToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYXBDbGFpbXMiOnsiZXhwIjoxNzE4NjkyNTMzLCJpYXQiOjE3MTg2OTIyMzMsImlzcyI6IkFmZm9yZG1lZCIsImp0aSI6ImQ0MmYyNzQzLWJiNTAtNGMxOC1iNjE1LTM4MzFhOTJmMjk1ZSIsInN1YiI6Im1hbmlwcmFiaGFzLjIxY3NlQGtvbmd1LmVkdSJ9LCJjb21wYW55TmFtZSI6Imtvbmd1IEVuZ2luZWVyaW5nIENvbGxlZ2UiLCJjbGllbnRJRCI6ImQ0MmYyNzQzLWJiNTAtNGMxOC1iNjE1LTM4MzFhOTJmMjk1ZSIsImNsaWVudFNlY3JldCI6ImZKZ2RCaUppYUNrTW5odFQiLCJvd25lck5hbWUiOiJNYW5pUHJhYmhhIiwib3duZXJFbWFpbCI6Im1hbmlwcmFiaGFzLjIxY3NlQGtvbmd1LmVkdSIsInJvbGxObyI6IjIxQ1NSMTA4In0.ZTHNut6a44Kz39igQnS4qu-_jsJ3PxAbjN_N1dKz28M'; 
+  const bearerToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYXBDbGFpbXMiOnsiZXhwIjoxNzE4Njk0MTU1LCJpYXQiOjE3MTg2OTM4NTUsImlzcyI6IkFmZm9yZG1lZCIsImp0aSI6ImQ0MmYyNzQzLWJiNTAtNGMxOC1iNjE1LTM4MzFhOTJmMjk1ZSIsInN1YiI6Im1hbmlwcmFiaGFzLjIxY3NlQGtvbmd1LmVkdSJ9LCJjb21wYW55TmFtZSI6Imtvbmd1IEVuZ2luZWVyaW5nIENvbGxlZ2UiLCJjbGllbnRJRCI6ImQ0MmYyNzQzLWJiNTAtNGMxOC1iNjE1LTM4MzFhOTJmMjk1ZSIsImNsaWVudFNlY3JldCI6ImZKZ2RCaUppYUNrTW5odFQiLCJvd25lck5hbWUiOiJNYW5pUHJhYmhhIiwib3duZXJFbWFpbCI6Im1hbmlwcmFiaGFzLjIxY3NlQGtvbmd1LmVkdSIsInJvbGxObyI6IjIxQ1NSMTA4In0.PRUp__syI7OSC39n3EGIx9e9SeOrmJ0UPekLgprntr0git'; 
 
   const fetchNumbers = () => {
     setLoading(true);
